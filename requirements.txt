@@ -1,0 +1,12 @@
+tensorflow>=2.12.0
+keras>=2.12.0
+pillow
+tkinter
+opencv-python
+numpy
+pandas
+matplotlib
+scikit-learn
+scikit-image
+tqdm
+SimpleITK
