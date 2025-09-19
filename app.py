@@ -8,8 +8,8 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 import tensorflow as tf
 from keras.utils import img_to_array
 
-DenseNet_model = tf.keras.models.load_model('chest_CT_SCAN-DenseNet201.keras', compile=False)
-ResNet_model = tf.keras.models.load_model('chest_CT_SCAN-ResNet50.keras', compile=False)
+DenseNet_model = tf.keras.models.load_model('models/chest_CT_SCAN-DenseNet201-tuned.keras', compile=False)
+ResNet_model = tf.keras.models.load_model('models/chest_CT_SCAN-ResNet50-tuned.keras', compile=False)
 class_dict = {0: "Adenocarcinoma", 1: "Large Cell Carcinoma", 2: "Normal", 3: "Squamous Cell Carcinoma"}
 
 
